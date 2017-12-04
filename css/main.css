@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
-  font: normal 100%/1.5 "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
@@ -14,33 +15,46 @@ html {
 
 body {
   margin: 0;
+
 }
 
 .banner {
   position: relative;
   max-height: 500px;
   overflow: hidden;
+
 }
 
-.banner-content {
+div.banner-content {
   position: absolute;
-  bottom: 2em;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
   max-width: 50em;
   color: #fff;
-
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 1.5rem;
 }
 
-h1 {
+div h2 {
   font-size: 4rem;
   margin: 0;
+  letter-spacing: -1px;
+  line-height: 1.4;
+}
+
+span {
   background-color: rgba(0, 0, 0, .5);
 }
 
-p {
+div p {
   font-size: 2rem;
   margin: 0;
   color: #000;
   font-style: italic;
+  font-weight: normal;
+  padding-top: .5em;
 }
 
 .banner img {
